@@ -1,0 +1,287 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Atkinson Hyperlegible Mono', monospace;
+  color: #111;
+  background: #fff4e5;
+  background-image: url("image/background.jpeg");
+  background-size: contain;        /* image fills screen */
+  background-position: center;   /* center image */
+  background-repeat: no-repeat;  /* no tiling */
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Atkinson Hyperlegible Mono', monospace;
+}
+
+body {
+  background: #f6f1e9;
+}
+
+/* ===== TOP HEADER ===== */
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 40px;
+  border-bottom: 1px solid #ddd;
+  background: #f6f1e9;
+}
+
+/* Left */
+.header-left {
+  flex: 1;
+  font-size: 14px;
+}
+
+/* Center */
+.header-center {
+  flex: 1;
+  text-align: center;
+}
+
+.header-center h1 {
+  font-size: 26px;
+  letter-spacing: 6px;
+  font-weight: 300;
+}
+
+/* Right */
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.lang {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Reserve button */
+.reserve-btn {
+  padding: 10px 20px;
+  background: #2f2f2f;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* ===== SUB NAV ===== */
+.sub-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+  background: #f6f1e9;
+}
+
+.sub-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background-image: url("image/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin-left: 800px;
+  color: #ddd;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.hero-btn {
+  text-decoration: none;
+  color: #faf5f5;
+  border-bottom: 1px solid #111;
+  font-size: 14px;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+  background: #f6f1e9;
+  padding: 140px 0 160px;
+  text-align: center;
+}
+
+/* Location */
+.about-location {
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  color: #555;
+}
+
+/* Title */
+.about-title {
+  font-size: 42px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-family: 'Times New Roman', monospace;
+}
+
+/* Description */
+.about-text {
+  max-width: 700px;
+  margin: 0 auto 120px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+  font-family: 'Times New Roman', monospace;
+}
+
+/* Images row */
+.about-images {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  padding: 0 30px;
+}
+
+/* Image sizes */
+.about-images img {
+  object-fit: cover;
+}
+
+.img-small {
+  width: 420px;
+  height: 280px;
+}
+
+.img-medium {
+  width: 420px;
+  height: 280px;
+}
+
+.img-large {
+  width: 420px;
+  height: 370px;
+}
+
+
+/* ROOMS */
+.rooms {
+  padding: 100px 80px;
+  background: #f7f7f7;
+}
+
+.rooms h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.room-card {
+  background: white;
+  padding: 40px;
+}
+
+.room-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.room-card p {
+  font-size: 13px;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  font-size: 12px;
+}
+/* ===== PAGE HERO ===== */
+.page-hero {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-hero h2 {
+  color: white;
+  font-size: 36px;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+
+/* ===== ROOMS ===== */
+.rooms {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 40px;
+}
+
+.room-card {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.room-card img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.room-info h3 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.room-info p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* Active nav */
+.sub-nav a.active {
+  border-bottom: 1px solid #333;
+}

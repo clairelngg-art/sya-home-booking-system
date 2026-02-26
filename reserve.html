@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Hotel | Reserve</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">SERENE</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rooms.html">Rooms</a></li>
+    <li><a href="experiences.html">Experiences</a></li>
+    <li><a href="#" class="reserve">Reserve</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>Reserve a Room</h2>
+
+  <form id="bookingForm">
+    <label>Check-in
+      <input type="date" id="checkin" required />
+    </label>
+
+    <label>Check-out
+      <input type="date" id="checkout" required />
+    </label>
+
+    <label>Room Type
+      <select id="roomType" required>
+        <option value="">Select</option>
+        <option>Standard</option>
+        <option>Deluxe</option>
+        <option>Family</option>
+      </select>
+    </label>
+
+    <label>Your Name
+      <input type="text" id="name" required />
+    </label>
+
+    <label>Email
+      <input type="email" id="email" required />
+    </label>
+
+    <button type="submit">Send Reservation</button>
+  </form>
+
+  <p id="message"></p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
